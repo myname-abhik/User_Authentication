@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/user/signin" method="POST" >
+        <div class="signupbox">
+           <div class="first"><label for="">Email :</label>
+                <input type="email" required name="email" id="Name"></div>
+            <div class="first"><label for="">passw:</label>
+                <input type="password" required name="password" id="Name"><div class="auth">
+
+            </div></div>
+            <div class="first" id="submit"><button type="submit" class="submit" id="Name">Submit</button></div>
+        </div>
+    </form>
+    </div>
+</body>
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: auto;
+    height:100vh ;
+    background-color: #76ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.signupbox
+{
+    width: 500px;
+    height:600px;
+    border-radius: 20px;
+    background-color: #29c6c6;
+    background:#31363F;
+box-shadow: 0 8px 32px 0 rgba(0, 1, 11, 0.95);
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.002);
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+/* gap: 10px; */
+overflow: hidden;
+}
+.first
+{
+    width: 100%;
+    height: calc((100%)/(5));
+    /* background-color: #0a0909; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding-left: 50px;
+    overflow: hidden;
+    color: #76ABAE;
+    font-size: 20px;
+    font-weight: 700;
+}
+#Name
+{
+    border: none;
+    outline: none;
+    
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    /* background-color: #0a0909; */
+    background-color: #3CBC8D;
+    margin-left: 30px;
+    padding-left: 20px;
+    /* color: rgb(197, 44, 44); */
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba(0, 1, 11, 0.30);
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.002);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* gap: 10px; */
+overflow: hidden;
+/* text-align: center; */
+color: #EEEEEE;
+font-size: 20px;
+}
+#submit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    /* padding-left: -20px; */
+    /* text-align: center; */
+    cursor: pointer;
+
+}
+
+
+
+
+</style>
+</html>
